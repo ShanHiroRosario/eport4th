@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ITCC508 Academic E-Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: #f8f9fb;
+      color: #333;
+    }
+
+    header {
+      background-color: #1e293b;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background-color: #334155;
+      padding: 1rem 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+      background-color: white;
+      border-radius: 8px;
+      margin-top: 2rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+
+    section h2 {
+      color: #1e293b;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+
+    .button-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .button-group a {
+      text-decoration: none;
+      padding: 1rem 1.5rem;
+      background-color: #0ea5e9;
+      color: white;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: background-color 0.2s ease;
+    }
+
+    .button-group a:hover {
+      background-color: #0284c7;
+    }
+
+    .highlight {
+      background-color: #e0f2fe;
+      padding: 0.5rem;
+      border-radius: 4px;
+      margin: 1rem 0;
+      border-left: 4px solid #0ea5e9;
+    }
+
+    .pdf-modal {
+      display: none;
+      position: fixed;
+      z-index: 9999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(15, 23, 42, 0.8); /* dark backdrop */
+      justify-content: center;
+      align-items: center;
+    }
+
+    .pdf-modal-content {
+      width: 80%;
+      height: 80%;
+      background-color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .pdf-modal iframe {
+      flex: 1;
+      width: 100%;
+      border: none;
+    }
+
+    .pdf-modal .modal-note {
+      font-size: 0.9rem;
+      color: #1e293b;
+      background: #f1f5f9;
+      margin: 0;
+      padding: 0.5rem;
+      border-top: 1px solid #cbd5e1;
+      text-align: center;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      background: #f87171;
+      color: white;
+      border: none;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 5px 12px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+
+    .close-btn:hover {
+      background: #dc2626;
+    }
+
+    footer {
+      margin-top: 4rem;
+      text-align: center;
+      padding: 2rem;
+      background-color: #1e293b;
+      color: white;
+      font-size: 0.9rem;
+    }
+  </style>
+
+  <script>
+    function openPdfModal(url) {
+      document.getElementById("pdfFrame").src = url;
+      document.getElementById("pdfModal").style.display = "flex";
+    }
+
+    function closePdfModal(event) {
+      if (event.target.id === "pdfModal" || event.target.classList.contains('close-btn')) {
+        document.getElementById("pdfModal").style.display = "none";
+        document.getElementById("pdfFrame").src = "";
+      }
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>ITCC508 Academic E-Portfolio</h1>
+    <p>My Journey in Machine Learning, Deep Learning, and NLP</p>
+  </header>
+
+  <nav>
+    <a href="#expectations">My Expectations</a>
+    <a href="#prelim">Prelim</a>
+    <a href="#midterm">Midterm</a>
+    <a href="#finals">Finals</a>
+    <a href="https://shanhirorosario.github.io/Eportfolio/" target="_blank">About me</a>
+  </nav>
+
+  <section id="expectations">
+    <h2>My Expectations for ITCC508</h2>
+    <p>
+      The document  below contains a reflective post based on the required readings and independent research, specifically the Exercise 1.
+      It discusses initial learning about Machine Learning (ML), Deep Learning (DL), and Natural Language Processing (NLP),
+      expectations for this course, and their relevance to my career goals in IT. It should be noted that you will not be downloading the document, simply opening it on this page.
+    </p>
+
+    <div class="highlight">
+      <strong>Note:</strong> You can preview it here:  
+      <a href="#" onclick="openPdfModal('1exercise.pdf')"><strong> Document</strong></a>
+    </div>
+
+    <!-- Modal -->
+    <div id="pdfModal" class="pdf-modal" onclick="closePdfModal(event)">
+      <div class="pdf-modal-content">
+        <button class="close-btn" onclick="closePdfModal(event)">×</button>
+        <iframe id="pdfFrame" src="" frameborder="0"></iframe>
+        <p class="modal-note">Click outside or press "X" to close.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="prelim">
+    <h2>Prelim Period</h2>
+    <div class="button-group">
+      <a href="prelim/assignments.html" target="_blank">Assignments / Peer Reviews</a>
+      <a href="prelim/labs.htm" target="_blank">Lab Exercises</a>
+      <a href="prelim/exams.html" target="_blank">Exams</a>
+      <a href="prelim/others.html" target="_blank">Other Projects</a>
+      <a href="prelim/reflection.html" target="_blank">Overall Learning Reflection</a>
+    </div>
+  </section>
+
+  <section id="midterm">
+    <h2>Midterm Period</h2>
+    <div class="button-group">
+      <a href="midterm/assignments.html" target="_blank">Assignments / Peer Reviews</a>
+      <a href="midterm/labs.html" target="_blank">Lab Exercises</a>
+      <a href="midterm/exams.html" target="_blank">Exams</a>
+      <a href="midterm/others.html" target="_blank">Other Projects</a>
+      <a href="midterm/reflection.html" target="_blank">Overall Learning Reflection</a>
+    </div>
+  </section>
+
+  <section id="finals">
+    <h2>Finals Period</h2>
+    <div class="button-group">
+      <a href="finals/assignments.html" target="_blank">Assignments / Peer Reviews</a>
+      <a href="finals/labs.html" target="_blank">Lab Exercises</a>
+      <a href="finals/exams.html" target="_blank">Exams</a>
+      <a href="finals/others.html" target="_blank">Other Projects</a>
+      <a href="finals/reflection.html" target="_blank">Overall Learning Reflection</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 ITC-C508 E-Portfolio | Built by S. R.</p>
+  </footer>
+</body>
+</html>
