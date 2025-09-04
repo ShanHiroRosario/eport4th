@@ -231,6 +231,18 @@
       font-size: 0.85rem;
       color: #94a3b8;
     }
+    .comment-block a.download-link,
+    .comment-block a.download-link:visited {
+          color: #ffffff;        /* white text */
+          text-decoration: none; /* optional */
+        }
+
+    /* optional hover/active styles */
+    .comment-block a.download-link:hover,
+    .comment-block a.download-link:active {
+        color: #2b6be3;
+      }
+
   </style>
 </head>
 <body>
@@ -244,84 +256,56 @@
   </header>
 
   <div class="gallery">
-    <figure class="gallery-item">
+     <figure class="gallery-item">
       <a href="#img1">
-        <img src="images/n1.jpg" alt="test">
+        <img src="images/first exerc.PNG" alt="Eportfolio">
       </a>
-      <figcaption>Example Work 1</figcaption>
+      <figcaption>Exercise 1: Eportfolio</figcaption>
     </figure>
+
     <figure class="gallery-item">
       <a href="#img2">
-        <img src="images/n2.jpg" alt="Example Work 2">
+        <img src="images/fig2.PNG" alt="Exercise 2: NLP Techniques Image">
       </a>
-      <figcaption>Example Work 2</figcaption>
+      <figcaption>Exercise 2: NLP Techniques</figcaption>
     </figure>
+    
     <figure class="gallery-item">
       <a href="#img3">
-        <img src="images/n3.png" alt="Example Work 3">
+        <img src="images/fig3.PNG" alt="Exercise 3: Text Representations Image">
       </a>
-      <figcaption>Example Work 3</figcaption>
+      <figcaption>Exercise 3: Text Representations</figcaption>
     </figure>
-  </div>
-
-  <!-- Lightbox 1 -->
-  <div id="img1" class="lightbox" onclick="location.href='#'">
-    <div class="lightbox-content">
-      <img src="images/n1.jpg" alt="Full Image" class="lightbox-img">
-      <div class="lightbox-comments">
-        <h3>Peer Review</h3>
-        <div class="comment-block">
-          <strong>Peer Reviewer 1:</strong>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-
-             when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap 
-
-
-
-             into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
-              passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        </div>
-        <div class="comment-block">
-          <strong>Peer Reviewer 2:</strong>
-          <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-        </div>
-        <div class="comment-block">
-          <strong>Peer Reviewer 3:</strong>
-          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
-        </div>
-      
-      </div>
-    </div>
-    <div class="lightbox-instruction">Click anywhere to close</div>
+    
+    
   </div>
 
   <!-- Lightbox 2 -->
   <div id="img2" class="lightbox" onclick="location.href='#'">
     <div class="lightbox-content">
-      <img src="images/n2.jpg" alt="Full Image" class="lightbox-img">
+      <img src="images/fig2.PNG" alt="Full Image" class="lightbox-img">
       <div class="lightbox-comments">
-        <h3>Peer Review</h3>
+        <h3>Additional Information</h3>
         <div class="comment-block">
-          <strong>Peer Reviewer 1:</strong>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+          <strong>Notes:</strong>
+          <p>Grades has not been out for this activity yet.</p>
+          <p>No Peer review for this activity.</p>
+          <p>You can download the activity below.</p>
 
-             when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap 
+          <!-- download link -->
+          <p>
+            <a class="download-link" href="files/Exer2_Rosario_ShanHiro.docx" download="Exer2_Rosario_ShanHiro.docx" title="Download the Activity file ">
+              ➜ Download activity file.
+            </a>
 
-
-
-             into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
-              passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <a class="download-link" href="files/Exer2_Rosario_ShanHiro.ipynb" download="Exer2_Rosario_ShanHiro.ipynb" title="Download the Activity file ">
+              ➜ Download python file.
+            </a>
+          </p>
         </div>
-        <div class="comment-block">
-          <strong>Peer Reviewer 2:</strong>
-          <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-        </div>
-        <div class="comment-block">
-          <strong>Peer Reviewer 3:</strong>
-          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
-        </div>
+
+      
       </div>
-
     </div>
     <div class="lightbox-instruction">Click anywhere to close</div>
   </div>
@@ -329,27 +313,41 @@
   <!-- Lightbox 3 -->
   <div id="img3" class="lightbox" onclick="location.href='#'">
     <div class="lightbox-content">
-      <img src="images/n3.png" alt="Full Image" class="lightbox-img">
+      <img src="images/fig3.PNG" alt="Full Image" class="lightbox-img">
       <div class="lightbox-comments">
-        <h3>Peer Review</h3>
+        <h3>Additional Information</h3>
         <div class="comment-block">
-          <strong>Peer Reviewer 1:</strong>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+          <strong>Notes:</strong>
+          <p>Grades has not been out for this activity yet.</p>
+          <p>No Peer review for this activity.</p>
+          
+          <p>You can download the activity below.</p>
 
-             when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap 
-
-
-
-             into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
-              passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          <!-- download link -->
+          <p>
+            <a class="download-link" href="files/RosarioShanHiro__Exercise3_NLP_Representation.docx" download="RosarioShanHiro__Exercise3_NLP_Representation.docx" title="Download the Activity file ">
+              ➜ Download activity file.
+            </a>
+            <a class="download-link" href="files/Exer3_Text_Representation.ipynb" download="Exer3_Text_Representation.ipynb" title="Download the Activity file ">
+              ➜ Download python file.
+            </a>
+          </p>
         </div>
+      </div>
+
+    </div>
+    <div class="lightbox-instruction">Click anywhere to close</div>
+  </div>
+
+  <!-- Lightbox 1 -->
+  <div id="img1" class="lightbox" onclick="location.href='#'">
+    <div class="lightbox-content">
+      <img src="images/first exerc.PNG" alt="Full Image" class="lightbox-img">
+      <div class="lightbox-comments">
+        <h3>Additional Information</h3>
         <div class="comment-block">
-          <strong>Peer Reviewer 2:</strong>
-          <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-        </div>
-        <div class="comment-block">
-          <strong>Peer Reviewer 3:</strong>
-          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+          <strong>Notes:</strong>
+          <p> This Eportfolio is the first activity.</p>
         </div>
 
       </div>
@@ -360,7 +358,15 @@
   <div class="reflection" id="reflection">
     <h2>Learning Reflection</h2>
     <p>
-      Work in progress...
+      It must be understood that in data science, specifically in the machine learning and deep learning field, a practitioner must
+      exercise his outmost effort in the preprocessing pipeline. For the prelims period, we focused on preparing the data, even if it is a
+      dummy data consisting of a limited number of words in order to fully grasp the semantics and importance of preprocessing in terms of NLP
+      tasks as advanced as it may be, these methodologies remains useless if the practititioner does not fully understand its concepts. For example,
+      bag of words counts the frequency of occurences a word appears in a sentence. However, it suffers from large documents due
+      to its design of storing each words in tokens to place it in a vector. However, it suffers from large amounts of data whereas TF-IDF performs better in
+      that area due to its reduction of common words and highlights more discriminative words for classification due to its design of placing weights upon each tokens.
+      Stopwords removal is an important prerequisite before these text representation methods because it could add alot of irrelevant features that clutters the model.
+      which results in higher processing times and other problemms that appears out of context in certain nuances.
     </p>
   </div>
 
